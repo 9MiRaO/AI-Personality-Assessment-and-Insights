@@ -34,4 +34,4 @@ jobs:
         with:
           context: .
           push: true
-          tags: ghcr.io/9MiRaO/AI-Personality-Assessment-and-Insights:latest
+          tags: ghcr.io/9mirao/ai-personality-assessment-and-insights:latest
