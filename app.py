@@ -16,7 +16,7 @@ from groq import Groq
 # ================================
 # CONFIGURE LLM (GROQ API)
 # ================================
-os.environ["GROQ_API_KEY"] = "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"
+os.environ["GROQ_API_KEY"] = "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"
 client = Groq(api_key=os.environ.get("GROQ_API_KEY"))
 
 def call_llm(prompt):
