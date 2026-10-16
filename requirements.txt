@@ -1,8 +1,0 @@
-streamlit
-faiss-cpu
-sentence-transformers
-requests
-groq
-pyngrok
-pandas
-plotly
