@@ -29,9 +29,11 @@ jobs:
           username: ${{ github.actor }}
           password: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Build and push image
+      - name: Build and publish versioned image
         uses: docker/build-push-action@v6
         with:
           context: .
           push: true
-          tags: ghcr.io/9mirao/ai-personality-assessment-and-insights:latest
+          tags: |
+            ghcr.io/9mirao/ai-personality-assessment-and-insights:v${{ github.run_number }}
+
