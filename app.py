@@ -21,7 +21,7 @@ client = Groq(api_key=os.environ.get("GROQ_API_KEY"))
 
 def call_llm(prompt):
     completion = client.chat.completions.create(
-        model="llama-3.3-70b-versatile",
+        model="openai/gpt-oss-120b",
         messages=[
             {"role": "system", "content": "You generate structured JSON personality questions only."},
             {"role": "user", "content": prompt}
